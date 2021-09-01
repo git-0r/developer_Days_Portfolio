@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* font-family: 'Esteban', serif;
+font-family: 'Montserrat', sans-serif; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  /* border:  1px solid white; */
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgba(21,21,21);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Esteban', serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
+.navbar {
+  /* border-bottom: 1px solid white; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo{
+  width: 50px;
+}
+
+.link{
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-hello{
+  background-color: #564eff;
+}
+.link-hello:hover{
+  transform: scale3d(1.03, 1.03,1);
+  transition: all 0.1s;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.--header-toyface{
+  width: 40vw;
+  height: 500px;
+  background-image: url(../src/images/toyface.png);
+  background-repeat: no-repeat;
+}
+
+.--header-about{
+  width: 40vw;
+  font-family: 'Esteban', serif;
+  line-height: 2rem;
+  font-size: 1.5vw;
+}
+
+.--header-myName{
+  font-weight: bold;
+  color: #de4566;
+}
+.--header-heading{
+  margin: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.--header-hand-waving{
+  animation: wave-animation 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0%{
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  10%{
+    transform: rotate(14deg);
+  }
+  20%{
+    transform: rotate(-8deg);
+  }
+  30%{
+    transform: rotate(14deg);
+  }
+  40%{
+    transform: rotate(-4deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
