@@ -294,10 +294,10 @@ footer {
   font-size: 24px;
   line-height: 48px;
   width: 48px;
-  margin-right: 2rem;
+  margin: 0 2rem 2rem 0;
 }
 
-@media (max-width:1200px) {
+@media (min-width:951px) and (max-width:1200px) {
   
  .--link-primary,
  .--link-secondary {
@@ -306,17 +306,80 @@ footer {
  }
 }
 
-@media (max-width:950px) {
+@media (min-width:541px) and(max-width:950px) {
   
  p{font-size: 2vw;}
-
- .--link-primary,
- .--link-secondary {
-  padding: 1rem 1rem;
-  margin: 1rem 0.3rem;
- }
 }
 
-@media (max-width:850px) {
-  
+@media (max-width:540px) {
+
+  .--navbar .--link-primary{
+    width: fit-content;
+  }
+
+  p{font-size: 5vw;}
+  h2{font-size: 10vw;}
+
+  header{
+    flex-wrap: wrap;
+  }
+  .--header-toyface{
+    width: 80%;
+    height: 50vh;
+  }
+
+  .--header-about{
+    width: 80%;
+  }
+
+  .--header-heading{
+    font-size: 10vw;
+  }
+
+  .--link-primary,
+  .--link-secondary{
+    width: 80vw;
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  section{
+    width: 80vw;
+    margin: 4rem auto;
+  }
+
+  .--skillset-heading{font-size: 7vw;}
+
+  .--skillset-icon {
+    font-size: 40px;
+    padding: 0.5rem 1rem;
+    width: 100px;
+  }
+
+  .--skillset-icon p{font-size: 2.5vw;}
+
+  #--section-projects{
+    margin: 3rem auto;
+  }
+
+  .--projects{margin: 2rem auto 0 auto;}
+  .--projects-heading-text{font-size: 5vw;}
+
+  .--project{
+    flex-wrap: wrap;
+    margin: 1rem auto;
+  }
+
+  .--project-image{
+    width: 100%;
+    order: -1;
+    height: fit-content;
+  }
+
+  .--footer-social-links{
+    flex-wrap: wrap;
+  }
+  .--footer-social-icon img{
+    margin-top: 2rem;
+  }
 }
