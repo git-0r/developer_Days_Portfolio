@@ -1,7 +1,4 @@
 import React from "react"
-// import twitterIcon from "../images/icon-twitter.svg"
-// import linkedinIcon from "../images/icon-linkedin.svg"
-// import octocatIcon from "../images/icon-octocat.svg"
 
 
 const Header = () => {
@@ -13,7 +10,7 @@ const Header = () => {
                 <p>
                     I’m <span className="--header-myName">Rohit</span>, and first off a <b><i>HUGE</i></b> thanks to you for checking out my page. I’m learning programming and web development 👨‍💻 to turn my ideas into sites and apps that work.🚀
                 </p>
-                <div>
+                <div className="--header-links">
                     <a className="--link-secondary" href="#--section-skillset">More about me</a>
                     <a className="--link-primary" href="#--section-projects">View my work</a>
                 </div>
